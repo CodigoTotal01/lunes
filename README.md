@@ -1,6 +1,6 @@
 # Full Stack E-Commerce + Dashboard & CMS: Next.js 13 App Router, React, Tailwind, Prisma, Postgresql
 
-Este es un repositorio para un Full Stack E-Commerce + Dashboard & CMS: Next.js 13 App Router, React, Tailwind, Prisma, MySQL
+Este es un repositorio para un Full Stack E-Commerce + Dashboard & CMS: Next.js 13 App Router, React, Tailwind, Prisma, Postgresql
 
 Características principales:
 
@@ -20,7 +20,7 @@ Características principales:
 - Creación de pedidos
 - Pago con Stripe
 - Webhooks de Stripe
-- MySQL + Prisma + PlanetScale
+- Postgresql + Prisma + PlanetScale
 ### Prerrequisitos
 
 **Nodo versión 14.x
