@@ -1,40 +1,31 @@
-# Full Stack E-Commerce + Dashboard & CMS: Next.js 13 App Router, React, Tailwind, Prisma, MySQL, 2023
+# Full Stack E-Commerce + Dashboard & CMS: Next.js 13 App Router, React, Tailwind, Prisma, Postgresql
 
-For DEMO, use [Stripe Testing Cards](https://stripe.com/docs/testing)
+Este es un repositorio para un Full Stack E-Commerce + Dashboard & CMS: Next.js 13 App Router, React, Tailwind, Prisma, MySQL
 
-This is a repository for a Full Stack E-Commerce + Dashboard & CMS: Next.js 13 App Router, React, Tailwind, Prisma, MySQL
+Características principales:
 
-Key Features:
-
-- We will be using Shadcn UI for the Admin!
-- Our admin dashboard is going to serve as both CMS, Admin and API!
-- You will be able to control mulitple vendors / stores through this single CMS! (For example you can have a "Shoe store" and a "Laptop store" and a "Suit store", and our CMS will generate API routes for all of those individually!)
-- You will be able to create, update and delete categories!
-- You will be able to create, update and delete products!
-- You will be able to upload multiple images for products, and change them whenever you want!
-- You will be able to create, update and delete filters such as "Color" and "Size", and then match them in the "Product" creation form.
-- You will be able to create, update and delete "Billboards" which are these big texts on top of the page. You will be able to attach them to a single category, or use them standalone (Our Admin generates API for all of those cases!)
-- You will be able to Search through all categories, products, sizes, colors, billboards with included pagination!
-- You will be able to control which products are "featured" so they show on the homepage!
-- You will be able to see your orders, sales, etc.
-- You will be able to see graphs of your revenue etc.
-- You will learn Clerk Authentication!
-- Order creation
-- Stripe checkout
-- Stripe webhooks
+- ¡Vamos a utilizar Shadcn UI para el Admin!
+- ¡Nuestro panel de control de administración va a servir como CMS, Admin y API!
+- ¡Usted será capaz de controlar múltiples vendedores / tiendas a través de este único CMS! (Por ejemplo, usted puede tener una "tienda de ropa" y una "tienda de zapatos" y una "tienda de trajes", y nuestro CMS generará rutas API para todos ellos individualmente).
+- Podrá crear, actualizar y eliminar categorías.
+- Podrá crear, actualizar y eliminar productos.
+- ¡Podrás subir múltiples imágenes para los productos, y cambiarlas cuando quieras!
+- Podrá crear, actualizar y eliminar filtros como "Color" y "Talla", y luego hacerlos coincidir en el formulario de creación de "Producto".
+- Podrá crear, actualizar y eliminar "Carteles", que son esos grandes textos que aparecen en la parte superior de la página. Podrá adjuntarlos a una sola categoría, o utilizarlos de forma independiente (¡Nuestro Admin genera API para todos esos casos!)
+- Podrá buscar en todas las categorías, productos, tallas, colores y carteles con paginación incluida.
+- ¡Usted será capaz de controlar qué productos son "destacados" para que se muestren en la página principal!
+- Podrá ver sus pedidos, ventas, etc.
+- Podrá ver gráficos de sus ingresos, etc.
+- Aprenderá la autenticación de clientes.
+- Creación de pedidos
+- Pago con Stripe
+- Webhooks de Stripe
 - MySQL + Prisma + PlanetScale
+### Prerrequisitos
 
-### Prerequisites
+**Nodo versión 14.x
 
-**Node version 14.x**
-
-### Cloning the repository
-
-```shell
-git clone https://github.com/GersonRocha9/ecommerce-admin.git
-```
-
-### Install packages
+### Instalar paquetes
 
 ```shell
 npm i
@@ -50,12 +41,12 @@ NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
 NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
-# This was inserted by `prisma init`:
-# Environment variables declared in this file are automatically made available to Prisma.
-# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+# Esto fue insertado por `prisma init`:
+# Las variables de entorno declaradas en este archivo se ponen automáticamente a disposición de Prisma.
+# Ver la documentación para más detalles: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
 
-# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
-# See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+# Prisma soporta el formato nativo de cadena de conexión para PostgreSQL, MySQL, SQLite, SQL Server, MongoDB y CockroachDB.
+# Ver la documentación para todas las opciones de cadena de conexión: https://pris.ly/d/connection-strings
 
 DATABASE_URL=''
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=""
@@ -64,23 +55,23 @@ FRONTEND_STORE_URL=http://localhost:3001
 STRIPE_WEBHOOK_SECRET=
 ```
 
-### Connect to PlanetScale and Push Prisma
+### Conectar a PlanetScale y Push Prisma
 
 ```shell
 npx prisma generate
 npx prisma db push
 ```
 
-### Start the app
+### Iniciar la aplicación
 
 ```shell
 npm run dev
 ```
 
-## Available commands
+## Comandos disponibles
 
-Running commands with npm `npm run [command]`
+Ejecutar comandos con npm `npm run [command]`
 
-| command | description                              |
+| comando | descripción |
 | :------ | :--------------------------------------- |
-| `dev`   | Starts a development instance of the app |
+| `dev` | Inicia una instancia de desarrollo de la aplicación |
